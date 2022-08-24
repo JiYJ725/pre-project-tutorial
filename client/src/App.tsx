@@ -11,7 +11,9 @@ function App() {
   const [hello, setData] = useState();
 
   useEffect(() => {
-    fetch('/hello')
+    fetch(
+      'http://ec2-54-180-106-244.ap-northeast-2.compute.amazonaws.com:8080/hello'
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data.hello[0].text);
