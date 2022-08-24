@@ -14,11 +14,11 @@ function App() {
     fetch('/hello')
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        setData(data);
+        console.log(data.hello[0].text);
+        setData(data.hello[0].text);
       });
   }, []);
-  return <div className="App">hello</div>;
+  return <div className="App">{hello}</div>;
 }
 
 export default App;
