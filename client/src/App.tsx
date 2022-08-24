@@ -14,8 +14,8 @@ function App() {
     fetch('/hello')
       .then((res) => res.json())
       .then((data) => {
-        setData(data[0].text);
-        console.log(data[0].text);
+        console.log(data);
+        setData(data);
       });
   }, []);
   return <div className="App">{hello}</div>;
