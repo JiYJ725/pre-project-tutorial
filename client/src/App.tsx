@@ -18,7 +18,7 @@ function App() {
         setData(data);
       });
   }, []);
-  return <div className="App">{hello}</div>;
+  return <div className="App">hello</div>;
 }
 
 export default App;
