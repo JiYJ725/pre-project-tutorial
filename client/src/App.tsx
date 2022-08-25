@@ -14,8 +14,8 @@ function App() {
     fetch('/hello')
       .then((res) => res.json())
       .then((data) => {
-        console.log(data[0].text);
-        setData(data[0].text);
+        console.log(data.hello[0].text);
+        setData(data.hello[0].text);
       });
   }, []);
   return <div className="App">==============team30 변경해보기</div>;
