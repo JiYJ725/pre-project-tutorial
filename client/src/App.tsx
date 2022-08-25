@@ -18,7 +18,12 @@ function App() {
         setData(data.hello[0].text);
       });
   }, []);
-  return <div className="App">==============team30 변경해보기</div>;
+  return (
+    <div className="App">
+      ==============team30 변경해보기
+      <div>{hello}</div>
+    </div>
+  );
 }
 
 export default App;
